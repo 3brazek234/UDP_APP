@@ -7,6 +7,8 @@ server.on('error', (err) => {
 });
 
 server.on('message', (msg, rinfo) => {
+  console.log(msg.toString());
+  console.log(rinfo)
   console.log(`server got: ${msg} from ${rinfo.address}:${rinfo.port}`);
 });
 
